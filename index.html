@@ -1,8 +1,7 @@
-HTML
 <!DOCTYPE HTML>
 <html lang="es">
     <head>
-        <title>Proyecto: Sistema Experto de Bienes de Uso | Cristian Couto</title>
+        <title>Cristian Couto | Senior IT Infrastructure & Data Science</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
@@ -10,50 +9,172 @@ HTML
     </head>
     <body class="is-preload">
 
-        <header id="header">
-            <a href="index.html" class="title">Cristian Couto | Portfolio</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="index.html#proyectos" class="active">Proyectos</a></li>
-                </ul>
-            </nav>
-        </header>
+        <section id="sidebar">
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li><a href="#intro">Inicio</a></li>
+                        <li><a href="#proyectos">Proyectos Destacados</a></li>
+                        <li><a href="#one">Experiencia</a></li>
+                        <li><a href="#two">Habilidades</a></li>
+                        <li><a href="#certs">Certificaciones</a></li>
+                        <li><a href="#three">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
 
         <div id="wrapper">
 
-            <section id="main" class="wrapper">
+            <section id="intro" class="wrapper style1 fullscreen fade-up">
                 <div class="inner">
-                    <h1 class="major">Sistema Experto Híbrido para Inventario Industrial</h1>
-                    <span class="image fit"><img src="images/pic04.jpg" alt="Entorno de Planta Industrial" /></span>
-                    
-                    <h2>💡 El Problema & La Idea</h2>
-                    <p>En el entorno dinámico de una planta de fabricación, consultar el inventario físico y los bienes de uso mediante hojas de cálculo de Excel tradicionales resulta lento, propenso a errores de versión y poco práctico para operarios y supervisores en campo. La idea central de este desarrollo fue eliminar la fricción de abrir archivos planos complejos, reemplazándola por una interfaz HTML intuitiva, rápida y centralizada.</p>
-
-                    <h2>🛠️ Arquitectura Técnica</h2>
-                    <p>El sistema se construyó bajo un enfoque moderno de procesamiento de lenguaje natural y base de conocimientos local:</p>
-                    <ul>
-                        <li><strong>Frontend:</strong> Interfaz HTML/JS minimalista y ágil para realizar las consultas de manera inmediata desde cualquier terminal de la planta.</li>
-                        <li><strong>Backend Core (Python):</strong> Un motor basado en reglas de negocio estrictas encargadas de parsear, validar y estructurar las peticiones críticas de los bienes de uso.</li>
-                        <li><strong>Knowledge Base:</strong> Una carpeta dedicada llamada <code>knowledge/</code> que centraliza y unifica la información de la planta extraída de forma nativa en formatos optimizados de intercambio de datos (<code>.json</code>) y documentación técnica de infraestructura (<code>.txt</code>).</li>
+                    <h1>Hola 👋, soy Cristian Couto</h1>
+                    <p><strong>Senior IT Infrastructure | Data Science & IA | CyberSecurity</strong><br /> 
+                    Especialista en resiliencia tecnológica y optimización industrial basada en datos.</p>
+                    <ul class="actions">
+                        <li><a href="#proyectos" class="button scrolly">Ver mis Proyectos</a></li>
                     </ul>
+                </div>
+            </section>
 
-                    <h2>🤖 El Enfoque del Sistema Experto (Lógica Híbrida & Ollama)</h2>
-                    <p>Para maximizar la fiabilidad sin perder la flexibilidad que requiere la planta, el backend opera bajo dos capas lógicas:</p>
-                    <ol>
-                        <li><strong>Capa Determinista (Reglas Python):</strong> Si la consulta del usuario encaja con las normativas, códigos de barra, activos asignados o ubicaciones de la fábrica, Python responde de forma instantánea usando los datos planos del JSON con 100% de precisión y cero alucinaciones.</li>
-                        <li><strong>Capa Cognitiva (Fallback con Ollama):</strong> Cuando una consulta escapa a las reglas estrictas (por ejemplo, preguntas de contexto técnico, recomendaciones de mantenimiento predictivo sobre el bien consultado o búsquedas cruzadas no estructuradas), el sistema deriva la tarea a un modelo de lenguaje local corriendo en <strong>Ollama</strong>, el cual procesa la información de la carpeta <code>knowledge</code> garantizando la privacidad absoluta de los datos de la corporación.</li>
-                    </ol>
+            <section id="proyectos" class="wrapper style3 fade-up">
+                <div class="inner">
+                    <h2>Proyectos de Innovación Industrial</h2>
+                    <p>Soluciones prácticas desarrolladas para optimizar la gestión operativa en planta.</p>
+                    <div class="features">
+                        <section style="width: 100%;">
+                            <span class="icon solid major fa-robot"></span>
+                            <h3>Sistema Experto de Inventario & IA (Ollama)</h3>
+                            <p>Desarrollo de un motor híbrido de consulta para los bienes de uso de la fábrica. Reemplaza las búsquedas manuales en archivos Excel complejos mediante una interfaz HTML ágil impulsada por Python y un LLM local.</p>
+                            <ul class="actions">
+                                <li><a href="proyecto-inventario.html" class="button">Ver Detalles del Proyecto</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </section>
 
-                    <h2>🚀 Beneficios en Planta</h2>
-                    <ul>
-                        <li><strong>Operación Paperless & Excel-free:</strong> Reducción drástica de tiempos muertos en la búsqueda de activos de infraestructura IT y maquinaria pesada.</li>
-                        <li><strong>Independencia del Cloud:</strong> Al correr con Ollama en servidores internos, se asegura la continuidad operativa incluso ante contingencias en la salida a Internet.</li>
-                    </ul>
+            <section id="one" class="wrapper style2 spotlights">
+                <section>
+                    <a href="#" class="image"><img src="images/pic01.jpg" alt="Infraestructura" data-position="center center" /></a>
+                    <div class="content">
+                        <div class="inner">
+                            <h2>Infraestructura Crítica</h2>
+                            <p>Más de 5 años gestionando entornos en <strong>Solnik S.A.</strong> para líneas de producción de alta complejidad (Nokia, TV, Celulares). Experto en virtualización con VMware, administración de Windows Server y redes Fortinet/HP.</p>
+                            <ul class="actions">
+                                <li><a href="https://www.linkedin.com/in/cristian-couto-147090211" class="button" target="_blank">Detalles en LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <a href="#" class="image"><img src="images/pic02.jpg" alt="Data Science" data-position="top center" /></a>
+                    <div class="content">
+                        <div class="inner">
+                            <h2>Datos & IA Aplicada</h2>
+                            <p>Formación en Ciencia de Datos aplicada a entornos productivos. Experiencia en desarrollo de modelos predictivos y análisis de datos, con interés en trasladar estas soluciones a procesos industriales.</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <a href="#" class="image"><img src="images/pic03.jpg" alt="Seguridad" data-position="25% 25%" /></a>
+                    <div class="content">
+                        <div class="inner">
+                            <h2>Seguridad & Resiliencia</h2>
+                            <p>Implementación de estrategias de <strong>Backup & Disaster Recovery</strong> con Veeam, orientadas a garantizar la continuidad operativa en entornos críticos y la integridad de la información ante incidentes.</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
 
-                    <ul class="actions" style="margin-top: 3em;">
-                        <li><a href="index.html#proyectos" class="button primary icon solid fa-arrow-left">Volver a Proyectos</a></li>
-                    </ul>
+            <section id="two" class="wrapper style3 fade-up">
+                <div class="inner">
+                    <h2>Especialidades Técnicas</h2>
+                    <p>Mi stack combina la solidez del mundo IT tradicional con las herramientas modernas de análisis de datos.</p>
+                    <div class="features">
+                        <section>
+                            <span class="icon solid major fa-server"></span>
+                            <h3>Sistemas & Virtualización</h3>
+                            <p>VMware ESXi/vCenter, Windows Server, Active Directory, Azure, AWS y Hardening de Linux.</p>
+                        </section>
+                        <section>
+                            <span class="icon solid major fa-network-wired"></span>
+                            <h3>Networking & Security</h3>
+                            <p>Gestión de Firewalls Fortinet, VPNs, VLANs industriales y Pentesting básico.</p>
+                        </section>
+                        <section>
+                            <span class="icon solid major fa-chart-line"></span>
+                            <h3>Automatización</h3>
+                            <p>Especialista en Automatización Avanzada con IA, enfocado en el diseño de flujos de trabajo inteligentes utilizando n8n y Node.js para maximizar la eficiencia operativa.</p>
+                        </section>
+                        <section>
+                            <span class="icon solid major fa-chart-line"></span>
+                            <h3>Ciencia de Datos</h3>
+                            <p>Análisis con Python, SQL, visualización en Dashboards y automatización de procesos industriales.</p>
+                        </section>
+                        <section>
+                            <span class="icon solid major fa-shield-alt"></span>
+                            <h3>Ciberseguridad</h3>
+                            <p>Auditoría de sistemas, gestión de vulnerabilidades y seguridad perimetral.</p> 
+                            <p>Potenciando continuamente mi perfil técnico mediante el estudio especializado de Linux orientado a la Ciberseguridad y el Hacking Ético.</p>
+                        </section>
+                        <section>
+                            <span class="icon solid major fa-save"></span>
+                            <h3>Continuidad de Negocio</h3>
+                            <p>Estrategias avanzadas de Backup & Replication y gestión de Storages Dell/Qnap/Lenovo/IBM.</p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certs" class="wrapper style2 fade-up">
+                <div class="inner">
+                    <h2>Certificaciones</h2>
+                    <p>Credenciales obtenidas a lo largo de mi trayectoria profesional.</p>
+                    <div class="features">
+                        <section>
+                            <span class="icon solid major fa-certificate"></span>
+                            <h3>AI Automation Avanzado</h3>
+                            <p>Coderhouse · 2026</p>
+                        </section>
+                        <section>
+                            <span class="icon solid major fa-certificate"></span>
+                            <h3>Diplomatura en redes linux Orientado a Ciberseguridad</h3>
+                            <p>UTN FRD · 2026</p>
+                        </section>
+                    </div>
+                </div>
+            </section> 
+
+            <section id="three" class="wrapper style1 fade-up">
+                <div class="inner">
+                    <h2>Hablemos</h2>
+                    <div class="split style1">
+                        <section>
+                            <form method="post" action="https://formspree.io/f/mkokzdba">
+                                <div class="fields">
+                                    <div class="field half"><label for="name">Nombre</label><input type="text" name="name" id="name" required /></div>
+                                    <div class="field half"><label for="email">Email</label><input type="email" name="email" id="email" required /></div>
+                                    <div class="field"><label for="message">Mensaje</label><textarea name="message" id="message" rows="5" required></textarea></div>
+                                </div>
+                                <ul class="actions">
+                                    <li><button type="submit" class="button submit">Enviar Mensaje</button></li>
+                                </ul>
+                            </form>
+                        </section>
+                        <section>
+                            <ul class="contact">
+                                <li><h3>Ubicación</h3><span>Río Grande, Tierra Del Fuego<br />Argentina</span></li>
+                                <li><h3>Email</h3><a href="mailto:cristiancouto.emm@gmail.com">cristiancouto.emm@gmail.com</a></li>
+                                <li><h3>Social</h3>
+                                    <ul class="icons">
+                                        <li><a href="https://github.com/c-couto" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/cristian-couto-147090211" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
                 </div>
             </section>
         </div>
@@ -61,7 +182,7 @@ HTML
         <footer id="footer" class="wrapper style1-alt">
             <div class="inner">
                 <ul class="menu">
-                    <li>&copy; Cristian Couto. Todos los derechos reservados.</li>
+                    <li>&copy; Cristian Couto. Todos los derechos reservados.</li><li>Diseño basado en: <a href="http://html5up.net">HTML5 UP</a></li>
                 </ul>
             </div>
         </footer>
@@ -73,6 +194,5 @@ HTML
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-
     </body>
 </html>
