@@ -1,42 +1,78 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
-<title>Cristian Couto | Infrastructure Engineer</title>
-<link rel="stylesheet" href="assets/css/main.css"></head>
-<body>
-<section id="intro" class="wrapper style1 fullscreen fade-up"><div class="inner">
-<h1>Cristian Couto</h1>
-<p><strong>Infrastructure Engineer | Linux | Automation | AI | Cybersecurity</strong></p>
-<p>Diseño e implemento soluciones para entornos industriales combinando infraestructura, desarrollo e inteligencia artificial.</p>
-<ul class="actions">
-<li><a href="#implementaciones" class="button">Implementaciones Reales</a></li>
-<li><a href="#certs" class="button">Certificaciones</a></li>
-<li><a href="#three" class="button">Contacto</a></li>
-</ul></div></section>
+HTML
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <title>Proyecto: Sistema Experto de Bienes de Uso | Cristian Couto</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
 
-<section id="implementaciones" class="wrapper style3 fade-up">
-<div class="inner">
-<h2>Implementaciones Reales</h2>
-<div class="features">
-<section>
-<span class="icon solid major fa-industry"></span>
-<h3>Sistema Inteligente de Consulta de Activos</h3>
-<p>Aplicación desarrollada en Python desplegada sobre Ubuntu Server LTS en VMware para consultar activos industriales desde la intranet utilizando reglas de negocio y una base de conocimiento JSON/TXT.</p>
-<ul>
-<li>Python</li><li>Ubuntu LTS</li><li>VMware</li><li>HTML</li><li>JSON/TXT</li>
-</ul>
-<ul class="actions"><li><a href="proyectos/inventario-industrial.html" class="button">Ver Caso de Estudio</a></li></ul>
-</section>
-</div>
-</div>
-</section>
+        <header id="header">
+            <a href="index.html" class="title">Cristian Couto | Portfolio</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#proyectos" class="active">Proyectos</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<section id="certs" class="wrapper style2 fade-up"><div class="inner">
-<h2>Certificaciones</h2>
-<p>Conservá aquí exactamente la sección de certificados de tu portfolio actual.</p>
-</div></section>
+        <div id="wrapper">
 
-<section id="three" class="wrapper style1 fade-up"><div class="inner">
-<h2>Contacto</h2>
-<p>Reutilizá el formulario y datos de contacto actuales.</p>
-</div></section>
+            <section id="main" class="wrapper">
+                <div class="inner">
+                    <h1 class="major">Sistema Experto Híbrido para Inventario Industrial</h1>
+                    <span class="image fit"><img src="images/pic04.jpg" alt="Entorno de Planta Industrial" /></span>
+                    
+                    <h2>💡 El Problema & La Idea</h2>
+                    <p>En el entorno dinámico de una planta de fabricación, consultar el inventario físico y los bienes de uso mediante hojas de cálculo de Excel tradicionales resulta lento, propenso a errores de versión y poco práctico para operarios y supervisores en campo. La idea central de este desarrollo fue eliminar la fricción de abrir archivos planos complejos, reemplazándola por una interfaz HTML intuitiva, rápida y centralizada.</p>
 
-</body></html>
+                    <h2>🛠️ Arquitectura Técnica</h2>
+                    <p>El sistema se construyó bajo un enfoque moderno de procesamiento de lenguaje natural y base de conocimientos local:</p>
+                    <ul>
+                        <li><strong>Frontend:</strong> Interfaz HTML/JS minimalista y ágil para realizar las consultas de manera inmediata desde cualquier terminal de la planta.</li>
+                        <li><strong>Backend Core (Python):</strong> Un motor basado en reglas de negocio estrictas encargadas de parsear, validar y estructurar las peticiones críticas de los bienes de uso.</li>
+                        <li><strong>Knowledge Base:</strong> Una carpeta dedicada llamada <code>knowledge/</code> que centraliza y unifica la información de la planta extraída de forma nativa en formatos optimizados de intercambio de datos (<code>.json</code>) y documentación técnica de infraestructura (<code>.txt</code>).</li>
+                    </ul>
+
+                    <h2>🤖 El Enfoque del Sistema Experto (Lógica Híbrida & Ollama)</h2>
+                    <p>Para maximizar la fiabilidad sin perder la flexibilidad que requiere la planta, el backend opera bajo dos capas lógicas:</p>
+                    <ol>
+                        <li><strong>Capa Determinista (Reglas Python):</strong> Si la consulta del usuario encaja con las normativas, códigos de barra, activos asignados o ubicaciones de la fábrica, Python responde de forma instantánea usando los datos planos del JSON con 100% de precisión y cero alucinaciones.</li>
+                        <li><strong>Capa Cognitiva (Fallback con Ollama):</strong> Cuando una consulta escapa a las reglas estrictas (por ejemplo, preguntas de contexto técnico, recomendaciones de mantenimiento predictivo sobre el bien consultado o búsquedas cruzadas no estructuradas), el sistema deriva la tarea a un modelo de lenguaje local corriendo en <strong>Ollama</strong>, el cual procesa la información de la carpeta <code>knowledge</code> garantizando la privacidad absoluta de los datos de la corporación.</li>
+                    </ol>
+
+                    <h2>🚀 Beneficios en Planta</h2>
+                    <ul>
+                        <li><strong>Operación Paperless & Excel-free:</strong> Reducción drástica de tiempos muertos en la búsqueda de activos de infraestructura IT y maquinaria pesada.</li>
+                        <li><strong>Independencia del Cloud:</strong> Al correr con Ollama en servidores internos, se asegura la continuidad operativa incluso ante contingencias en la salida a Internet.</li>
+                    </ul>
+
+                    <ul class="actions" style="margin-top: 3em;">
+                        <li><a href="index.html#proyectos" class="button primary icon solid fa-arrow-left">Volver a Proyectos</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <footer id="footer" class="wrapper style1-alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li>&copy; Cristian Couto. Todos los derechos reservados.</li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
